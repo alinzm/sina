@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BRoya';
+    src: url('../fonts/BRoya.eot');
+    src: url('../fonts/BRoya.eot') format('embedded-opentype'),
+         url('../fonts/BRoya.woff2') format('woff2'),
+         url('../fonts/BRoya.woff') format('woff'),
+         url('../fonts/BRoya.ttf') format('truetype'),
+         url('../fonts/BRoya.svg#BRoya') format('svg');
+}
+@font-face {
+    font-family: 'iRoya';
+    src: url('../fonts/iRoya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body,h1{
+	font-family: 'iRoya';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}

@@ -1,36 +1,15 @@
 @font-face {
     font-family: 'iRoya';
-    src: url('../fonts/iRoya.eot');
-    src: url('../fonts/iRoya.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iRoya.woff2') format('woff2'),
-         url('../fonts/iRoya.woff') format('woff'),
-         url('../fonts/iRoya.ttf') format('truetype'),
-         url('../fonts/iRoya.svg#iRoya') format('svg');
+    src: url('../fonts/BRoya.eot');
+    src: url('../fonts/BRoya.eot') format('embedded-opentype'),
+         url('../fonts/BRoya.woff2') format('woff2'),
+         url('../fonts/BRoya.woff') format('woff'),
+         url('../fonts/BRoya.ttf') format('truetype'),
+         url('../fonts/BRoya.svg#BRoya') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'iRoya';
-    src: url('../fonts/iRoyaB.eot');
-    src: url('../fonts/iRoyaB.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iRoyaB.woff2') format('woff2'),
-         url('../fonts/iRoyaB.woff') format('woff'),
-         url('../fonts/iRoyaB.ttf') format('truetype'),
-         url('../fonts/iRoyaB.svg#iRoyaB') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'iRoya';
-    src: url('../fonts/iRoyaI.eot');
-    src: url('../fonts/iRoyaI.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iRoyaI.woff2') format('woff2'),
-         url('../fonts/iRoyaI.woff') format('woff'),
-         url('../fonts/iRoyaI.ttf') format('truetype'),
-         url('../fonts/iRoyaI.svg#iRoyaI') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
+
 body{
 	direction: rtl;
 	background-color: #F8FAFF;
