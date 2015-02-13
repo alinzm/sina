@@ -20,24 +20,25 @@ h1,h2,h3,h4,p,a{
 	font-family: 'iRoya';
 }
 #logo{
-	width: 32px;
-	height: 32px;
+	width: 52px;
+	height: 52px;
 }
 .navbar-brand{
 	height: auto;
 	float: right;
+	padding: 0;
 }
 .navbar-header{
 	float: right;
 }
 .navbar-default{
-	background-color: #44CFAF;
+	background-color: #D8EBD5;
 }
 .navbar-default .navbar-nav > li > a{
 	line-height: 33px;
 	vertical-align: middle;
 	font-size: 1.5em;
-	color: #F8FAFF;
+	color: #567539;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover{
 	background-color: #00F3FF;
@@ -46,8 +47,10 @@ h1,h2,h3,h4,p,a{
 	background-color: #00B1FF;
 	color: #F8FAFF;
 }
-.navbar-nav > li {
-	float: right;
+@media (min-width: 768px) {
+	.navbar-nav > li {
+		float: right;
+	}
 }
 #main-jumbotron{
 	background-image: url(../img/build2.jpg);
@@ -64,4 +67,10 @@ h1,h2,h3,h4,p,a{
 }
 .navbar-inverse h3, .navbar-inverse p{
 	color: #B4B6BB;
+}
+.navbar-brand h3{
+	display: inline;
+	color: #E4822B;
+	line-height: 62px;
+	vertical-align: middle;
 }
