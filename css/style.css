@@ -10,7 +10,7 @@ body {
     background-color: #F8FAFF;
     margin-top: 63px;
 }
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, label, input{
     font-family: 'iRoya';
 }
 #logo {
@@ -94,6 +94,17 @@ h1, h2, h3, h4, p, a {
     font-family: Tahoma;
     font-size: 12px;
 }
+#social-links{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#social-links li{
+	float: right;
+}
+#social-links li img{
+	width: 32px;
+}
 .main-recent{
 	margin-bottom: 30px;
 	background-color: #EEE;
@@ -173,6 +184,71 @@ h1, h2, h3, h4, p, a {
 .main-recent-content>p{
 	font-family: Tahoma;
 	font-size: 12px;
+}
+#main-gallery ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#main-gallery li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+#main-gallery img{
+	width: 120px;
+	margin: 5px;
+}
+.main-three-button{
+	font-size: 12px;
+	font-family: Tahoma,'tahoma';
+    background-color: hsl(150, 73%, 40%) !important;
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2bdd84", endColorstr="#1bb066");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#2bdd84), to(#1bb066));
+    background-image: -moz-linear-gradient(top, #2bdd84, #1bb066);
+    background-image: -ms-linear-gradient(top, #2bdd84, #1bb066);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2bdd84), color-stop(100%, #1bb066));
+    background-image: -webkit-linear-gradient(top, #2bdd84, #1bb066);
+    background-image: -o-linear-gradient(top, #2bdd84, #1bb066);
+    background-image: linear-gradient(#2bdd84, #1bb066);
+    border-color: #1bb066 #1bb066 hsl(150, 73%, 37%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
+    -webkit-font-smoothing: antialiased;
+}
+#newsletter-subscription label{
+	font-size: 1.4em;
+	color: black;
+	text-shadow: 2px 2px white 1px;
+}
+#newsletter{
+	position: relative;
+    display: block;
+    padding: 8px;
+    background-color: #fff;
+    background-clip: padding-box;
+    background-image: linear-gradient(bottom, #e5e5e5 0%, #f7f7f7 100%);
+}
+#newsletter:before{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D1D1D1;
+    background: repeating-linear-gradient(45deg, #b37b7a , #b37b7a 10px, transparent 10px, transparent 20px, #7897ba 20px, #7897ba 30px,transparent 30px, transparent 40px);
+    background-clip: padding-box;
+    content: "";
+}
+#newsletter-body{
+	background-color: white;
+	display: block;
+	position: relative;
+    background-image: url(../img/mohr.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 /*===========Animations===========*/
 /* Sweep To Bottom */
