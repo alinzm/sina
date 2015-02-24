@@ -250,6 +250,22 @@ h1, h2, h3, h4, p, a, label, input{
     background-position: right;
     background-repeat: no-repeat;
 }
+.p-large{
+    font-size: 24px;
+}
+#iran-svg{
+    width: 100%;
+}
+.tooltip.top .tooltip-inner {
+    font-family: 'iRoya';
+    font-size: 20px;
+}
+#iran-svg>g>a>path{
+    transition: 1s;
+}
+#iran-svg>g>a>path:hover{
+    fill: #9ac245;
+}
 /*===========Animations===========*/
 /* Sweep To Bottom */
 
