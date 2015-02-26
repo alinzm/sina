@@ -67,21 +67,150 @@
                     </div>
                     <div class="panel-body">
                         <div class="list-group">
-                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=80" class="list-group-item">اگهی استخدامی در شرکت توسعه اموال سینا (۱۳۹۳/۱۱/۰۱)</a>
-                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=70" class="list-group-item">اطلاعیه جدید استخدامی توسعه اموال سینا (۱۳۹۳/۰۷/۰۶)</a>
-                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=61" class="list-group-item">جذب نیرو در شركت توسعه اموال سينا وابسته به بنياد مستضعفان انقلاب اسلامي</a>
+                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=80" class="list-group-item"><span class="glyphicon glyphicon-exclamation-sign"></span> اگهی استخدامی در شرکت توسعه اموال سینا <span class="badge">۱۳۹۳/۱۱/۰۱</span></a>
+                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=70" class="list-group-item"><span class="glyphicon glyphicon-exclamation-sign"></span> اطلاعیه جدید استخدامی توسعه اموال سینا <span class="badge">۱۳۹۳/۰۷/۰۶</span></a>
+                            <a href="http://www.ndrdi.ir/fa/index.asp?P=NEWSVIEW&ID=61" class="list-group-item"><span class="glyphicon glyphicon-exclamation-sign"></span> جذب نیرو در شركت توسعه اموال سينا وابسته به بنياد مستضعفان انقلاب اسلامي<span class="badge">1393/03/28</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h4>فرم همکاری</h4>
                     </div>
                     <div class="panel-body">
                         <form action="">
                             <div class="row">
-                                <div class="col-sm-6 col-sm-push-6"></div>
-                                <div class="col-sm-6 col-sm-pull-6"></div>
+                                <div class="col-sm-12">
+                                    <h3><span class="glyphicon glyphicon-user"></span> مشخصات فردی</h3>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-push-6">
+                                    <div class="form-group">
+                                        <label for="firstname">نام</label>
+                                        <input type="text" class="form-control" name="firstname">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lastname">نام خانوادگی</label>
+                                        <input type="text" class="form-control" name="lastname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="father">نام پدر</label>
+                                        <input type="text" class="form-control" name="father">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="birthdate">تاریخ تولد</label>
+                                        <input type="text" class="form-control" name="birthdate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jensiat">جنسیت</label>
+                                        <select name="jensiat" id="" class="form-control">
+                                            <option value="0">مرد</option>
+                                            <option value="1">زن</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="taahol">وضعیت تاهل</label>
+                                        <select name="taahol" id="" class="form-control">
+                                            <option value="0">مجرد</option>
+                                            <option value="1">متاهل</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shenasname">شماره شناسنامه</label>
+                                        <input type="text" class="form-control" name="shenasname">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-sm-pull-6">
+                                    <div class="form-group">
+                                        <label for="melli">کد ملی</label>
+                                        <input type="text" class="form-control" name="melli">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="birthplace">محل تولد</label>
+                                        <input type="text" class="form-control" name="birthplace">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">ایمیل</label>
+                                        <input type="email" class="form-control" name="email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="tel">تلفن ثابت</label>
+                                        <input type="text" class="form-control" name="tel">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">تلفن همراه</label>
+                                        <input type="text" class="form-control" name="mobile">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="liveplace">شهر محل سکونت</label>
+                                        <input type="text" class="form-control" name="liveplace">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="khedmat">وضعیت خدمت</label>
+                                        <select name="khedmat" id="" class="form-control">
+                                            <option value="0">انجام شده</option>
+                                            <option value="0">معافیت تحصیلی</option>
+                                            <option value="0">معافیت دائم</option>
+                                            <option value="0">معافیت پزشکی</option>
+                                            <option value="0">معافیت خاص</option>
+                                            <option value="0">خرید خدمت</option>
+                                            <option value="0">سایر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3><span class="glyphicon glyphicon-leaf"></span> آخرین مدرک تحصیلی</h3>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-push-6">
+                                    <div class="form-group">
+                                        <label for="university">نام موسسه/دانشگاه</label>
+                                        <input type="text" class="form-control" name="university">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">شهر</label>
+                                        <input type="text" class="form-control" name="city">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="certificate">مدرک تحصیلی</label>
+                                        <select name="certificate" class="form-control" id="">
+                                            <option value="0">دیپلم</option>
+                                            <option value="0">فوق دیپلم</option>
+                                            <option value="0">لیسانس</option>
+                                            <option value="0">فوق لیسانس</option>
+                                            <option value="0">دکترا</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-sm-pull-6">
+                                    <div class="form-group">
+                                        <label for="course">رشته تحصیلی</label>
+                                        <input type="text" class="form-control" name="course">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="certdate">تاریخ اخذ مدرک</label>
+                                        <input type="text" class="form-control" name="certdate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="moadel">معدل</label>
+                                        <input type="text" class="form-control" name="moadel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 clearfix">
+                                <hr>
+                                    <input type="submit" class="btn btn-primary pull-left" value="ثبت اطلاعات">
+                                </div>
                             </div>
                         </form>
                     </div>

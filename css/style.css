@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'iYekan';
+    src: url('../fonts/BYekan.eot');
+    src: url('../fonts/BYekan.eot') format('embedded-opentype'), url('../fonts/BYekan.woff2') format('woff2'), url('../fonts/BYekan.woff') format('woff'), url('../fonts/BYekan.ttf') format('truetype'), url('../fonts/BYekan.svg#BYekan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'iRoya';
     src: url('../fonts/BRoya.eot');
     src: url('../fonts/BRoya.eot') format('embedded-opentype'), url('../fonts/BRoya.woff2') format('woff2'), url('../fonts/BRoya.woff') format('woff'), url('../fonts/BRoya.ttf') format('truetype'), url('../fonts/BRoya.svg#BRoya') format('svg');
@@ -7,11 +14,17 @@
 }
 body {
     direction: rtl;
-    background-color: #F8FAFF;
+    background-color: #E0E0E0;
     margin-top: 63px;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+    background-position: 0 100px;
 }
-h1, h2, h3, h4, p, a, label, input{
-    font-family: 'iRoya';
+h1, h2, h3, h4, label{
+    font-family: 'iYekan';
+}
+p,a,input,select,option{
+	font-family: 'iRoya';
 }
 .container p{
     font-size: 18px;
@@ -29,12 +42,13 @@ h1, h2, h3, h4, p, a, label, input{
     float: right;
 }
 .navbar-default {
-    background-color: #D8EBD5;
+    background-color: #FFFFFF;
 }
 .navbar-default .navbar-nav > li > a {
+	font-family: 'iYekan';
     line-height: 33px;
     vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 16px;
     color: #567539;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
@@ -58,11 +72,14 @@ h1, h2, h3, h4, p, a, label, input{
 #main-jumbotron h1 {
     text-shadow: 2px 2px #ffffff;
 }
+.jumbotron h1{
+	font-size: 42px;
+}
 #main-jumbotron p {
-    font-size: 21px;
+    font-size: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, .4);
-    border-right: 10px rgba(255, 255, 255, .3) solid;
+    background-color: rgba(255, 255, 255, .5);
+    border-right: 10px rgba(255, 255, 255, .5) solid;
 }
 #main-jumbotron a {
     font-size: 18px;
@@ -91,8 +108,13 @@ h1, h2, h3, h4, p, a, label, input{
     vertical-align: middle;
 }
 #main-footer {
+	margin-top: 25px;
+	padding-top: 45px;
     background-color: #3F3C37;
     color: #95A592;
+    background-image: url(../img/footer-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 #main-footer p, #main-footer a {
     font-family: Tahoma;
@@ -204,6 +226,11 @@ h1, h2, h3, h4, p, a, label, input{
 	width: 120px;
 	margin: 5px;
 }
+.main-three a{
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
 .main-three-button{
 	font-size: 12px !important;
 	font-family: Tahoma,'tahoma';
@@ -254,8 +281,15 @@ h1, h2, h3, h4, p, a, label, input{
     background-position: right;
     background-repeat: no-repeat;
 }
+#newsletter-body label{
+	color: black;
+	text-shadow: 2px 2px white;
+}
+.panel-success{
+	border-color: #C7D4BC;
+}
 p.p-large{
-    font-size: 24px;
+    font-size: 20px;
 }
 #iran-svg{
     width: 80%;
@@ -288,7 +322,6 @@ p.p-large{
 #branch-box p .glyphicon{
     font-size: 24px;
     color: lightblue;
-    vertical-align: middle;
 }
 #branch-box p:hover .glyphicon{
     color: blue;
@@ -296,10 +329,17 @@ p.p-large{
 .btn{
     font-size: 18px;
 }
+.glyphicon{
+	vertical-align: middle;
+}
 .list-group-item{
     font-size: 21px;
 }
-
+.list-group-item > .badge{
+	float: left;
+	font-size: 21px;
+	background-color: lightblue;
+}
 /*===========Animations===========*/
 /* Sweep To Bottom */
 
