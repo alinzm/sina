@@ -340,6 +340,19 @@ p.p-large{
 	font-size: 21px;
 	background-color: lightblue;
 }
+.news{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px lightblue solid;
+}
+.news .badge{
+	font-family: 'iRoya';
+	font-size: 16px;
+	background-color: pink;
+	color: #444;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 /*===========Animations===========*/
 /* Sweep To Bottom */
 
