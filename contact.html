@@ -22,22 +22,35 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-nav" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="شرکت توسعه اموال سینا" src="img/sina.png" id="logo" class="pull-right">
+                    <h3>شرکت توسعه اموال سینا <small>(سهامی خاص)</small></h3>
+                    <h4>وابسته به بنیاد مستضعفان انقلاب اسلامی ایران</h4>
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="جستجو">
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu-nav" data-spy="affix" data-offset-top="100">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">منو</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    مـــنـــو
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img alt="شرکت توسعه اموال سینا" src="img/sina.png" id="logo" style="display: inline;">
-                    <h3>توسعه اموال سینا</h3>
-                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><img src="img/sina.png" alt="" id="nav-logo"><span>شرکت توسعه اموال سینا</span></li>
                     <li><a href="index.html" class="">صفحه اصلی</a>
                     </li>
                     <li><a href="" class="">مزایده ها</a>
@@ -49,11 +62,6 @@
                     <li><a href="about.html" class="">درباره ما</a>
                     </li>
                     <li class="active"><a href="contact.html" class="">تماس با ما</a>
-                    </li>
-                    <li>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="جستجو">
-                        </div>
                     </li>
                 </ul>
             </div>
