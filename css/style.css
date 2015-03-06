@@ -18,6 +18,10 @@
     font-style: normal;
     src: url(../fonts/WebMitra-Bold.woff) format("woff")
 }
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 body {
     direction: rtl;
     background-color: #E0E0E0;
@@ -42,20 +46,45 @@ p, a, input, select, option {
 #main-nav {
     min-height: 80px;
     border: none;
+    transition: all 0.2s linear;
 }
 #menu-nav {
     min-height: 43px;
     margin-top: 80px;
     background-color: #750D6C;
-    background: -webkit-linear-gradient(#750D6C,#3A0636);
-    background: -o-linear-gradient(#750D6C,#3A0636);
-    background: -moz-linear-gradient(#750D6C,#3A0636);
-    background: linear-gradient(#750D6C,#3A0636);
+    background: -webkit-linear-gradient(#750D6C, #3A0636);
+    background: -o-linear-gradient(#750D6C, #3A0636);
+    background: -moz-linear-gradient(#750D6C, #3A0636);
+    background: linear-gradient(#750D6C, #3A0636);
     border-color: #3A0636;
+    transition: margin-top 0.2s linear;
+}
+#menu-nav #nav-logo{
+	width: 32px;
+	height: 32px;
+	margin-left: 10px;
+}
+#menu-nav span{
+	font-family: WebMitra;
+    line-height: 43px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #E4822B;
+    font-weight: normal;
+    padding-left: 10px;
 }
 #menu-nav .navbar-nav {
     float: right;
     padding-right: 0;
+}
+#menu-nav .navbar-nav > li:first-child{
+	transform: scale(0);
+	-ms-transform: scale(0);
+    -webkit-transform: scale(0);
+	width: 0;
+	height: 0;
+	transition: all 0.5s linear;
+	overflow: hidden;
 }
 #menu-nav .navbar-nav > li > a {
     font-family: WebMitra;
@@ -64,18 +93,17 @@ p, a, input, select, option {
     font-size: 14px;
     color: #93808E;
     transition: color 0.5s ease;
-    font-weight: norma;
-    l
+    font-weight: normal;
 }
 #menu-nav .navbar-nav > li > a:hover, #menu-nav .navbar-nav > .active > a:hover {
     color: white;
 }
 #menu-nav .navbar-nav > .active > a {
     background-color: #3A0636;
-    background: -webkit-linear-gradient(#3A0636,#750D6C);
-    background: -o-linear-gradient(#3A0636,#750D6C);
-    background: -moz-linear-gradient(#3A0636,#750D6C);
-    background: linear-gradient(#3A0636,#750D6C);
+    background: -webkit-linear-gradient(#3A0636, #750D6C);
+    background: -o-linear-gradient(#3A0636, #750D6C);
+    background: -moz-linear-gradient(#3A0636, #750D6C);
+    background: linear-gradient(#3A0636, #750D6C);
     color: #FFF;
 }
 #main-nav .navbar-header {
@@ -87,10 +115,11 @@ p, a, input, select, option {
     float: right;
     padding: 0;
 }
-#main-nav .navbar-brand h3, #main-nav .navbar-brand h4{
+#main-nav .navbar-brand h3, #main-nav .navbar-brand h4 {
     padding: 0;
     margin: 0;
     margin-right: 10px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 #main-nav .navbar-brand h3 {
     display: inline-block;
@@ -98,11 +127,11 @@ p, a, input, select, option {
     vertical-align: middle;
     line-height: 45px;
 }
-#main-nav .navbar-brand h3 small{
+#main-nav .navbar-brand h3 small {
     color: #E4822B;
     font-size: 12px;
 }
-#main-nav .navbar-brand h4{
+#main-nav .navbar-brand h4 {
     display: inline-block;
     font-family: 'iRoya';
     font-size: 18px;
@@ -427,8 +456,9 @@ p.p-large {
 #myCarousel .list-group-item {
     border-radius: 0;
     cursor: pointer;
+    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
-#myCarousel .list-group-item:first-child {
+#myCarousel .list-group-item.active {} #myCarousel .list-group-item:first-child {
     border-top-right-radius: 10px;
 }
 #myCarousel .list-group-item:last-child {
@@ -439,24 +469,38 @@ p.p-large {
     font-size: 18px;
 }
 @media (max-width: 768px) {
-    #main-nav .navbar-nav{
+    #main-nav .navbar-nav {
         display: none;
     }
     #menu-nav .navbar-nav {
         margin-right: 5px;
         width: 100%;
     }
-    #menu-nav .navbar-header button{
+    #menu-nav .navbar-header button {
         font-family: 'iYekan';
         font-size: 18px;
         color: white;
     }
-    #menu-nav .navbar-collapse{
-    }
+    #menu-nav .navbar-collapse {}
 }
 @media (min-width: 768px) {
     .navbar-nav > li {
         float: right;
+    }
+    #main-nav.affix {
+        min-height: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    #menu-nav.affix {
+        margin-top: 0;
+    }
+    #menu-nav.affix li:first-child{
+    	transform: scale(1);
+    	-ms-transform: scale(1);
+    	-webkit-transform: scale(1);
+    	width: 170px;
+    	height: 43px;
     }
 }
 @media (min-width: 992px) {
