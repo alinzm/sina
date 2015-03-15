@@ -1,22 +1,46 @@
 @font-face {
     font-family: 'iYekan';
-    src: url('../fonts/BYekan.eot');
-    src: url('../fonts/BYekan.eot') format('embedded-opentype'), url('../fonts/BYekan.woff2') format('woff2'), url('../fonts/BYekan.woff') format('woff'), url('../fonts/BYekan.ttf') format('truetype'), url('../fonts/BYekan.svg#BYekan') format('svg');
-    font-weight: normal;
+    src: url("../fonts/YekanWeb-Regular.eot");
+    src: url("../fonts/YekanWeb-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/YekanWeb-Regular.woff") format("woff"),
+        url("../fonts/YekanWeb-Regular.ttf") format("truetype"),
+        url("../fonts/YekanWeb-Regular.svg#YekanWeb-Regular") format("svg");
     font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility
 }
 @font-face {
-    font-family: 'iRoya';
-    src: url('../fonts/BRoya.eot');
-    src: url('../fonts/BRoya.eot') format('embedded-opentype'), url('../fonts/BRoya.woff2') format('woff2'), url('../fonts/BRoya.woff') format('woff'), url('../fonts/BRoya.ttf') format('truetype'), url('../fonts/BRoya.svg#BRoya') format('svg');
-    font-weight: normal;
+    font-family: 'iYekanNumber';
+    src: url("../fonts/YekanNumbers-Regular.eot");
+    src: url("../fonts/YekanNumbers-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/YekanNumbers-Regular.woff") format("woff"),
+        url("../fonts/YekanNumbers-Regular.ttf") format("truetype"),
+        url("../fonts/YekanNumbers-Regular.svg#YekanNumbers-Regular") format("svg");
     font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility
 }
 @font-face {
-    font-family: WebMitra;
-    font-weight: 700;
+    font-family: 'Mitra';
+    src: url("../fonts/MitraWeb-Regular.eot");
+    src: url("../fonts/MitraWeb-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MitraWeb-Regular.woff") format("woff"),
+        url("../fonts/MitraWeb-Regular.ttf") format("truetype"),
+        url("../fonts/MitraWeb-Regular.svg#MitraWeb-Regular") format("svg");
     font-style: normal;
-    src: url(../fonts/WebMitra-Bold.woff) format("woff")
+    font-weight: normal;
+    text-rendering: optimizeLegibility
+}
+@font-face {
+    font-family: 'Mitra';
+    src: url("../fonts/MitraWeb-Bold.eot");
+    src: url("../fonts/MitraWeb-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MitraWeb-Bold.woff") format("woff"),
+        url("../fonts/MitraWeb-Bold.ttf") format("truetype"),
+        url("../fonts/MitraWeb-Bold.svg#MitraWeb-Bold") format("svg");
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility
 }
 body {
     direction: rtl;
@@ -27,13 +51,13 @@ body {
     background-position: 0 100px;
 }
 h1, h2, h3, h4, label {
-    font-family: 'iYekan';
+    font-family: 'iYekan','iYekanNumber';
 }
 p, a, input, select, option {
-    font-family: 'iRoya';
+    font-family: 'Mitra','iYekanNumber';
 }
 .container p {
-    font-size: 18px;
+    font-size: 16px;
 }
 #logo {
     width: 80px;
@@ -61,12 +85,12 @@ p, a, input, select, option {
 	margin-left: 10px;
 }
 #menu-nav span{
-	font-family: WebMitra;
+    font-family: 'Mitra','iYekanNumber';
     line-height: 43px;
     vertical-align: middle;
     font-size: 14px;
     color: #E4822B;
-    font-weight: normal;
+    font-weight: bold;
     padding-left: 10px;
 }
 #menu-nav .navbar-nav {
@@ -83,13 +107,13 @@ p, a, input, select, option {
 	overflow: hidden;
 }
 #menu-nav .navbar-nav > li > a {
-    font-family: WebMitra;
+    font-family: 'Mitra','iYekanNumber';
+    font-weight: bold;
     line-height: 13px;
     vertical-align: middle;
     font-size: 14px;
     color: #93808E;
     transition: color 0.5s ease;
-    font-weight: normal;
 }
 #menu-nav .navbar-nav > li > a:hover, #menu-nav .navbar-nav > .active > a:hover {
     color: white;
@@ -129,7 +153,7 @@ p, a, input, select, option {
 }
 #main-nav .navbar-brand h4 {
     display: inline-block;
-    font-family: 'iRoya';
+    font-family: 'Mitra','iYekanNumber';
     font-size: 18px;
 }
 .navbar-header {
@@ -331,6 +355,10 @@ p, a, input, select, option {
 .panel-success {
     border-color: #C7D4BC;
 }
+.panel-heading h4{
+    font-size: 16px;
+    font-weight: bold;
+}
 p.p-large {
     font-size: 20px;
 }
@@ -339,7 +367,7 @@ p.p-large {
     margin-right: 10%;
 }
 .tooltip.top .tooltip-inner {
-    font-family: 'iRoya';
+    font-family: 'Mitra','iYekanNumber';
     font-size: 20px;
 }
 #iran-svg>g>a>path {
@@ -384,7 +412,7 @@ p.p-large {
     background-color: lightblue;
 }
 .panel .badge {
-    font-family: 'iRoya';
+    font-family: 'Mitra','iYekanNumber';
     font-size: 16px;
     font-weight: normal;
 }
@@ -394,7 +422,7 @@ p.p-large {
     border-bottom: 1px lightblue solid;
 }
 .news .badge {
-    font-family: 'iRoya';
+    font-family: 'Mitra','iYekanNumber';
     font-size: 16px;
     background-color: pink;
     color: #444;
@@ -403,6 +431,7 @@ p.p-large {
 }
 .panel {
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 /*==========Carousel==============*/
 
@@ -436,7 +465,7 @@ p.p-large {
     padding: 10px;
 }
 #myCarousel .carousel-caption h4 a {
-    font-family: 'iYekan' !important;
+    font-family: 'iYekan','iYekanNumber' !important;
     font-size: 18px;
     color: #333;
 }
@@ -461,8 +490,8 @@ p.p-large {
     border-bottom-right-radius: 10px;
 }
 #myCarousel .list-group-item h4 {
-    font-family: 'iRoya';
-    font-size: 18px;
+    font-family: 'iYekan','iYekanNumber';
+    font-size: 16px;
 }
 @media (max-width: 768px) {
     #main-nav .navbar-nav {
@@ -473,7 +502,7 @@ p.p-large {
         width: 100%;
     }
     #menu-nav .navbar-header button {
-        font-family: 'iYekan';
+        font-family: 'iYekan','iYekanNumber';
         font-size: 18px;
         color: white;
     }
