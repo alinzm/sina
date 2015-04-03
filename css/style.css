@@ -56,6 +56,17 @@ h1, h2, h3, h4, label {
 p, a, input, select, option {
     font-family: 'Mitra','iYekanNumber';
 }
+body>.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-left: 2px dotted rgba(0,0,0,0.3);
+    border-right: 2px dotted rgba(0,0,0,0.3);
+    padding-bottom: 63px;
+    background-image: url('../img/container-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
 .container p {
     font-size: 16px;
 }
@@ -67,6 +78,11 @@ p, a, input, select, option {
     min-height: 80px;
     border: none;
     transition: all 0.2s linear;
+}
+#main-nav>.container{
+    background-image: url('../img/header-bg.png');
+    background-position: top left;
+    background-repeat: no-repeat;
 }
 #menu-nav {
     min-height: 43px;
@@ -174,17 +190,25 @@ p, a, input, select, option {
     color: #B4B6BB;
 }
 #main-footer {
-    margin-top: 25px;
     padding-top: 45px;
     background-color: #3F3C37;
     color: #95A592;
     background-image: url(../img/footer-bg.png);
-    background-position: top center;
+    background-position: bottom right;
     background-repeat: no-repeat;
 }
 #main-footer p, #main-footer a {
     font-family: Tahoma;
     font-size: 12px;
+}
+#main-footer a{
+    color: #6cade4;
+    text-shadow: 0 1px black;
+    transition: color 0.2s ease 0s;
+}
+#main-footer a:hover{
+    text-decoration: none;
+    color: #ecb83c;
 }
 #social-links {
     margin: 0;
@@ -358,6 +382,8 @@ p, a, input, select, option {
 .panel-heading h4{
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
+    padding: 7px;
 }
 p.p-large {
     font-size: 20px;
@@ -543,4 +569,17 @@ p.p-large {
     #myCarousel .carousel-caption {
         left: 0;
     }
+}
+/*=========  Bootstrap Fixes ==========*/
+.panel-heading{
+    padding: 0 10px;
+}
+.panel-body{
+    padding: 5px;
+}
+.panel-footer{
+    padding: 5px;
+}
+.panel .badge{
+    margin-top: 7px;
 }
